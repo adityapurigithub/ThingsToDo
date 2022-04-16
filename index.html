@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ToDo List</title>
+	<!-- font awesome style sheet link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="title">
+			<span>Things To Do</span>
+		</div>
+		<form class="todo-input">
+			<input type="text" placeholder="What To Do???" />
+			<button type="submit"><i class="fa fa-plus" aria-hidden="true"></i></button>
+
+			<div class="options">
+				<select class="filters">
+					<option value="all">All</option>
+					<option value="completed">Completed</option>
+					<option value="uncompleted">Uncompleted</option>
+				</select>
+			</div>
+
+		</form>
+
+		<div class="todo-container">
+			<ul class="todo-list"></ul>
+
+		</div>
+		<div class="pending-todo">
+			<span>You Have <span id="pending-task"></span> Pending Task</span>
+			<button type="submit" id="clear-all">Clear All</button>
+		</div>
+
+
+
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
